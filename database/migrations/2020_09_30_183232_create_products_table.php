@@ -20,7 +20,6 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->integer('category_Id');
             $table->string('image');
-            $table->decimal('price');
             $table->integer('in_discount');
             $table->integer('discount');
             $table->text('content');

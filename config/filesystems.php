@@ -42,7 +42,7 @@ return [
     */
 
     'disks' => [
-
+ 
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
@@ -56,12 +56,12 @@ return [
         ],
         'uploads' => [
             'driver' => 'local',
-            'root' => 'C:/www/cms/public/uploads'
+            'root' => 'C:/Users/contr/Desktop/Git Hub/Laravel-cms/public/uploads'
 
         ],
         'uploads_users' => [
             'driver' => 'local',
-            'root' => 'C:/www/cms/public/uploads_users'
+            'root' => 'C:/Users/contr/Desktop/Git Hub/Laravel-cms/public/uploads_users'
 
         ],
 

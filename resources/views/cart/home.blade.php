@@ -19,8 +19,7 @@
         </div>
         @else
        <div class="items mtop32">
-            
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-9">
                         <div class="panel">
                             <div class="header">
@@ -29,12 +28,12 @@
                             <div class="inside">
                                 <table class="table table-responsive  table-hover">
                                     <thead>
-                                        <tr>
-                                            <td></td>
+                                        <tr >
+                                            <td width="100"></td>
                                             <td width="80"></td>
-                                            <td><strong>Producto</strong></td>
-                                            <td><strong>Cantidad</strong></td>
-                                            <td width="90"><strong>Subtotal</strong></td>
+                                            <td width="300"><strong>Producto</strong></td>
+                                            <td width="300"><strong>Cantidad</strong></td>
+                                            <td width="300"><strong>Subtotal</strong></td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -105,7 +104,7 @@
                                 {!!Form::textarea('order_msg', null,['class' => 'form-control', 'rows' => 3])!!}
                             </div>
                         </div>
-                        <div class="panel mtop16">
+                        <div class="panel mtop16 ">
                             <div class="inside">
                                 {!!Form::submit('Completar Orden', ['class' => 'btn btn-success'])!!}
                             </div>

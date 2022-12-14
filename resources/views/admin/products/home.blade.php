@@ -71,10 +71,10 @@
                     <thead>
                         <tr>
                             <td ><strong>#</strong></td>
-                            <td width="100"></td>
+                            <td width="300"></td>
                             <td width="400"><strong>Nombre</strong></td>
-                            <td ><strong>Categoria</strong></td>
-                            <td width="200"><strong>Precio</strong></td>
+                            <td width="400"><strong>Categoria</strong></td>
+                            <td width="250"><strong>Precio</strong></td>
                         </tr>
                     </thead>
                     <tbody>
@@ -96,8 +96,9 @@
                                     @endif
                                 </td>
                                 <td>{{ $p->cat->name }}@if($p->subcategory_id != "0") <i class="fas fa-angle-double-right"></i>{{$p->getSubCategory->name}} @endif</td>
+                               
                                 <td>
-                                    {{config('cms.currency')}}{{number_format($p->price, 0,'.',',')}}
+                                    {{config('cms.currency')}}{{number_format($p->price, 0,',','.')}}
                                   
                                 </td>
                                 <td width ="140">

@@ -152,6 +152,7 @@ class ProductController extends Controller
             $product->name = e($request->input('name'));
             $product->category_id = $request->input('category');
             $product->subcategory_id = $request->input('subcategory');
+            $product->price = ($request->input('price'));
             if ($request->hasFile('img')) :
                 $path = '/' . date('Y-m-d'); // organiza las imagenes en carpetas usando la fecha.
                 $fileExt = trim($request->file('img')->getClientOriginalExtension());
@@ -167,7 +168,7 @@ class ProductController extends Controller
             $product->discount_until_date = $request->input('discount_until_date');
             $product->content = e($request->input('content'));
             if ($product->save()) :
-                $this->getUpdateMinPrice($product->id);
+                //$this->getUpdateMinPrice($product->id);
                 if ($request->hasFile('img')) :
                     $fl = $request->img->storeAs($path, $filename, "uploads");
                     $img = Image::make($file_file);

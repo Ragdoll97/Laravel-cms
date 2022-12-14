@@ -156,7 +156,7 @@
         @show
        </div>
     </div>
-    <div class="footer mtop16">
+    <div class="footer mtop50">
       <div class="row ">
           <div class="col-md-4 mtop32" >
               <div id="Nosotros" class="title">Sobre Nosotros</div>

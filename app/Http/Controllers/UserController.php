@@ -22,12 +22,13 @@ class UserController extends Controller
    }
 
    //Permite guardar una imagen como avatar.
+   //Revisar archivo filesystem.php en config/ , ya que ahí almacenamos la ruta donde se guardarán las imagenes.
    public function postAccountAvatar(Request $request){
   
     $rules = [
         'avatar' => 'required',
 
-    ];
+    ]; 
     $messages = [
 
         'avatar.required' => 'El archivo no es una imagen',

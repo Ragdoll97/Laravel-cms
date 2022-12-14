@@ -80,11 +80,11 @@
                                             {!!Form::number('price',$product->price, ['hidden','id' => 'price'])!!}
                                             {!!Form::text('product_id',$product->id, ['hidden','id' => 'product_id'])!!}
                                             {!!Form::number('quantity','1', ['class' => 'form-control', 'min' => '1', 'id' => 'quantity'])!!}
-                                          
+                                        
                                         </div>
                                     </div>
                                     <div class="col-md-4 mtop24">
-                                        <button type="submit "  class="btn btn-success"><i class="fas fa-shopping-cart"></i>Añadir al carrito</button>
+                                        <button type="submit"  class="btn btn-success"><i class="fas fa-shopping-cart"></i>Añadir al carrito</button>
                                     </div>
                                     <div class="col-md-4 mtop24 col-12">
                                         <a href="#" id="favorite_1_{{ $product->id }}" onclick="add_to_favorites({{ $product->id }}, '1'); return false;" class="btn btn-favorite">

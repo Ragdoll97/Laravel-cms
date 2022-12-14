@@ -53,7 +53,7 @@ class SliderController extends Controller
             return back()->withErrors($validator)->with('message', 'Se ha producido un error')
                 ->with('typealert', 'danger')->withInput();
         else:
-            $path = '/'.date('Y-m-d'); // organiza las imagenes en carpetas usando la fecha.
+            $path = '/' . date('Y-m-d'); // organiza las imagenes en carpetas usando la fecha.
             $fileExt = trim($request->file('img')->getClientOriginalExtension());
             $upload_path = Config::get('filesystems.disks.uploads.root');
             $name = Str::slug(str_replace($fileExt, '', $request->file('img')->getClientOriginalName()));
@@ -63,7 +63,7 @@ class SliderController extends Controller
             $slider -> user_id = Auth::id();
             $slider -> status = $request->input('status');
             $slider -> name = e($request->input('name'));
-            $slider -> file_path =  date('Y-m-d');
+            $slider->  file_path = date('Y-m-d');
             $slider -> file_name = $filename;
             $slider -> content = e($request->input('content'));
             $slider -> sorder = e($request->input('sorder'));

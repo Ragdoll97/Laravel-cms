@@ -19,14 +19,14 @@ class CreateTableOrders3 extends Migration
             $table->integer('status')->default('0');
             $table->integer('o_type')->default('0');
             $table->integer('user_id');
-            $table->integer('user_address_id');
-            $table->text('user_comment');
-            $table->decimal('subtotal');
-            $table->decimal('delivery');
-            $table->decimal('total');
+            $table->integer('user_address_id')->nullable();
+            $table->text('user_comment')->nullable();
+            $table->decimal('subtotal')->default(0);
+            $table->decimal('delivery')->default(0);
+            $table->decimal('total')->default(0);
             $table->integer('payment_method')->default('0');
-            $table->text('payment_info');
-            $table->dateTime('paid_at');
+            $table->text('payment_info')->nullable();
+            $table->dateTime('paid_at')->nullable();
             $table->timestamps();
         });
     }

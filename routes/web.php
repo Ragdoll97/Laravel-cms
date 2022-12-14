@@ -27,7 +27,7 @@ Route::get('/cart/item/{id}/delete','App\Http\Controllers\CartController@getCart
 //Modulo Tienda->Categorias
 Route::get('/store','App\Http\Controllers\ContentController@getStore')->name('store'); 
 Route::get('/store/category/{id}/{slug}','App\Http\Controllers\ContentController@getCategory')->name('store_category'); 
-Route::get('/categories/{id}/{slug}','App\Http\Controllers\ContentController@getCategoriesHome'); 
+Route::get('/categories/{id}/{slug}','App\Http\Controllers\ContentController@getCategory'); 
 Route::post('/search','App\Http\Controllers\ContentController@postSearch')->name('search'); 
 
 

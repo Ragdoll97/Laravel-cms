@@ -18,8 +18,8 @@ class CreateSlidersTable extends Migration
             $table->integer('user_id');
             $table->integer('status');
             $table->string('name');
-            $table->integer('file_path');
-            $table->integer('file_name');
+            $table->string('file_path');
+            $table->string('file_name');
             $table->text('content');
             $table->integer('sorder');
             $table->timestamps();

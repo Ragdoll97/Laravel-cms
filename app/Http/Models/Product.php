@@ -10,14 +10,14 @@ class Product extends Model
 {
     use SoftDeletes;
     use HasFactory;
-
+ 
     protected $date = ['deleted_at'];
     protected $table = 'products';
     protected $hidden = ['created_at','updated_at'];
 
     public function cat(){
           # Un producto tiene una categoria
-        return $this->hasOne(Category::class, 'id','category_id');
+        return $this->hasOne(Category::class, 'id','category_Id');
     }
     public function getSubCategory(){
           # Un producto tiene una subcategoria
